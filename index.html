@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Company Info</title>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-white shadow border-b">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-4">
+        <img src="logo-placeholder.png" alt="Company logo" class="h-10 w-10">
+        <h1 class="text-lg font-medium">Company logo</h1>
+      </div>
+      <img src="user-placeholder.png" alt="User Avatar" class="h-10 w-10 rounded-full">
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white ">
+    <div class="container mx-auto px-6 py-3">
+      <ol class="flex items-center space-x-2 text-sm text-gray-500">
+        <li>My Companies</li>
+        <li>/</li>
+        <li class="text-blue-600">Catalog</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-6 py-6">
+    <!-- Tabs -->
+    <div class="flex space-x-8 border-b pb-2">
+      <button class="tab-button active pb-2 px-4 py-2 text-blue-600 border-b-4 border-blue-600 font-medium">
+        Company info
+      </button>
+      <button class="tab-button pb-2 px-4 py-2 text-gray-500">
+        Reports
+      </button>
+    </div>
+
+
+    <!-- Company Info -->
+    <div class="flex justify-between items-center py-6">
+      <div class="flex items-center space-x-4">
+        <img src="logo-placeholder.png" alt="Company Logo" class="h-16 w-16">
+        <div>
+          <h2 class="text-2xl font-semibold">Catalog</h2>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button class="p-2 bg-gray-200 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12h12M6 12l6-6m0 6l6 6" />
+          </svg>
+        </button>
+        <button class="px-4 py-2 bg-white text-black border-b rounded-lg">Edit company info</button>
+      </div>
+    </div>
+
+    <!-- Company Details -->
+      <div class="border-b pb-6">
+        <div class="grid grid-cols-2">
+          <div class="grid grid-cols-3">
+            <div>
+              <h3 class="text-black text-sm">Location</h3>
+              <p class="text-lg font-semibold">Melbourne, AU</p>
+            </div>
+            <div>
+              <h3 class="text-black text-sm">Fiscal year end</h3>
+              <p class="text-lg font-semibold">January 19, 2025</p>
+            </div>
+            <div>
+              <h3 class="text-black text-sm">Naics</h3>
+              <p class="text-lg font-semibold">123456789</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-black text-sm">Critical company info</h3>
+            <p class="text-lg font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    <!-- Left Column - Chart of Accounts -->
+    <div id="table-info" class="grid grid-cols-1 md:grid-cols-2 "> 
+      <div class="bg-white p-6 ">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-lg font-medium">Chart of accounts</h3>
+            <p class="text-sm text-gray-500">Last Update Feb 2, 2024</p>
+          </div> <button class="px-4 py-2 bg-blue-600 text-white rounded-lg self-start">Upload</button>
+        </div>
+        <div class="overflow-y-auto max-h-100 no-scrollbar">
+          <ul class="mt-4 space-y-2">
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span> </div>
+                <div>
+                  <p>Latest Chart of Accounts.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Chart of Accounts.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Chart of Accounts.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Chart of Accounts.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Chart of Accounts.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li> 
+          </ul>
+        </div>
+      </div> <!-- Right Column - Trial Balance -->
+      <div class="bg-white p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-lg font-medium">Trial Balance</h3>
+            <p class="text-sm text-gray-500">Last Update Feb 2, 2024</p>
+          </div> <button class="px-4 py-2 bg-blue-600 text-white rounded-lg self-start">Upload</button>
+        </div>
+        <div class="overflow-y-auto max-h-100 no-scrollbar">
+          <ul class="mt-4 space-y-2">
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span> </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li>
+            <li class="flex items-center justify-between bg-white p-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4"> <span
+                    class="bg-green-500 text-white px-2 py-1 rounded text-sm">CSV</span>
+                </div>
+                <div>
+                  <p>Latest Trial Balance.csv</p>
+                  <p class="text-gray-500">1.2 MB</p>
+                </div>
+              </div>
+              <p class="text-gray-500">Feb 2, 2024</p>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
