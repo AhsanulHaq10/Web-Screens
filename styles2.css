@@ -1,0 +1,63 @@
+.tab-button {
+  position: relative;
+  transition: color 0.3s, border-color 0.3s;
+  width: 200px;
+}
+
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0px; 
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  color: #8b5cf6; 
+}
+
+.tab-button:hover::after {
+  background-color: #8b5cf6; 
+}
+
+.tab-button.active {
+  color: #1d4ed8; 
+  font-size: 1.125rem; 
+}
+
+.tab-button.active::after {
+  background-color: #1d4ed8; 
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+#table-info {
+  border-top: 1px solid #d1d5db; 
+}
+
+#table-info > div:first-child {
+  border-right: 1px solid #d1d5db;
+  border-left: 1px solid #d1d5db;
+}
+
+#table-info ul li {
+  border-top: 1px solid #D1D5DB; 
+  padding: 8px;  
+  font-size: 0.875rem; 
+   box-shadow: none;
+}
+
+#table-info ul {
+  margin-top: 0; 
+}

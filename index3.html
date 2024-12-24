@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css">
+  <title>Company Info</title>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-white shadow border-b">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-4">
+        <img src="./icons/logo.png" alt="Company logo" class="h-10 w-10 rounded-full">
+        <h1 class="text-lg font-medium">Company logo</h1>
+      </div>
+      <img src="./icons/download.jpeg" alt="User Avatar" class="h-10 w-10 rounded-full">
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white ">
+    <div class="container mx-auto px-6 py-6">
+      <div class="flex items-center space-x-2">
+        <!-- Home icon button -->
+        <button class="p-2 bg-white  rounded-md ">
+          <span class="material-icons text-gray-600">home</span>
+        </button>
+
+        <!-- Breadcrumb navigation -->
+        <ol class="flex items-center space-x-2 text-sm text-gray-500">
+          <li>My Companies</li>
+          <li>/</li>
+          <li class="text-blue-600">Catalog</li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-6 py-6">
+    <!-- Tabs -->
+    <div class="flex space-x-2 border-b "> <button
+        class="tab-button pb-2 px-4 font-medium" onclick="activateTab(this)"> Company
+        info
+      </button> 
+      <button class="tab-button active px-4 font-medium" onclick="activateTab(this)"> Reports </button>
+    </div>
+
+
+    <!-- Company Info -->
+    <div class="flex justify-between items-center py-8">
+      <div class="flex items-center justify-center space-x-1">
+        <button class="p-4 bg-white flex items-center justify-center">
+          <i class="material-icons text-xl">keyboard_arrow_left</i>
+        </button>
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold">Edit Reports</h2>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4 ">
+        <!-- Edit company info button -->
+        <button class="px-4 py-2 bg-blue-600 text-white border border-gray-300 rounded-md hover:bg-purple-500">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div id="table-info" class="grid grid-cols-1 md:grid-cols-2 ">
+      <!-- AI Report -->
+      <div class="bg-white p-6 ">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-medium">AI Summary Report</h3>
+          <button
+            onclick="copyText()"
+            class="px-4 py-2 bg-white text-black border border-gray-300 rounded-lg flex items-center justify-center space-x-2 hover:bg-gray-100">
+            <i class="material-icons text-gray-500">content_copy</i>
+            <span>Copy</span>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-lg border border-blue-200">
+          <p id="reportText" class="text-sm text-gray-700">
+          Earlier this month, Google released Gemini 2.0, ushering in the agentic era of AI. For many of our customers, they were
+          already living it.
+          
+          Even before we released Gemini 1.0 a year ago, organizations of all sizes across all industries were already building AI
+          services and early forms of agents on Vertex AI and tapping into generative tools in Google Workspace. During Google
+          Cloud Next ‘24, we first published this post as a showcase for 101 of the best use cases out of hundreds featured across
+          the event. Then in September, for our Gemini at Work event, we featured another 84 examples from our customers.
+          
+          Today, we’re rounding out a year truly defined by AI with more than 135 fresh examples. And in addition to grouping them
+          by agent type, we’ve now broken them out by industry, as well — we keep hearing from customers just how important it is
+          to see the opportunities in their field.
+          
+          What makes AI agents unique is that they can take actions to achieve specific goals, whether that’s guiding a shopper to
+          the perfect pair of shoes, helping an employee looking for the right health benefits, or supporting nursing staff with
+          smoother patient hand-offs during shifts changes.
+          
+          In our work with customers, we see their teams are increasingly focused on improving productivity, automating processes,
+          and modernizing the customer experience. These aims are now being achieved through the AI agents they’re developing in
+          six key areas: customer service; employee empowerment; code creation; data analysis; cybersecurity; and creative
+          ideation and production.</p>
+        </div>
+      </div>
+      <!--PDF Report-->
+      <div class="bg-gray-200 p-6 ">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-medium">Monthly PDF Report</h3>
+          <button
+            onclick="copyText()"
+            class="px-4 py-2 bg-white text-black border border-gray-300 rounded-lg flex items-center justify-center space-x-2 hover:bg-gray-100">
+            <i class="material-icons text-gray-500">content_copy</i>
+            <span>Copy</span>
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-blue-200">
+          <p id="reportText" class="text-sm text-gray-700">
+          Earlier this month, Google released Gemini 2.0, ushering in the agentic era of AI. For many of our customers, they were
+          already living it.
+          
+          Even before we released Gemini 1.0 a year ago, organizations of all sizes across all industries were already building AI
+          services and early forms of agents on Vertex AI and tapping into generative tools in Google Workspace. During Google
+          Cloud Next ‘24, we first published this post as a showcase for 101 of the best use cases out of hundreds featured across
+          the event. Then in September, for our Gemini at Work event, we featured another 84 examples from our customers.
+          
+          Today, we’re rounding out a year truly defined by AI with more than 135 fresh examples. And in addition to grouping them
+          by agent type, we’ve now broken them out by industry, as well — we keep hearing from customers just how important it is
+          to see the opportunities in their field.
+          
+          What makes AI agents unique is that they can take actions to achieve specific goals, whether that’s guiding a shopper to
+          the perfect pair of shoes, helping an employee looking for the right health benefits, or supporting nursing staff with
+          smoother patient hand-offs during shifts changes.
+          
+          In our work with customers, we see their teams are increasingly focused on improving productivity, automating processes,
+          and modernizing the customer experience. These aims are now being achieved through the AI agents they’re developing in
+          six key areas: customer service; employee empowerment; code creation; data analysis; cybersecurity; and creative
+          ideation and production.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> 
+  function activateTab(button)
+    { // Remove 'active' class from all buttons
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(btn => btn.classList.remove('active', 'border-blue-600', 'font-medium'));
+      // Add 'active' class to the clicked button
+      button.classList.add('active', 'border-blue-600', 'font-medium');
+    } 
+  function copyText()
+    {
+      // Select the text from the paragraph
+      const textElement = document.getElementById('reportText');
+      const textToCopy = textElement.textContent || textElement.innerText;
+
+      // Copy the text to the clipboard
+      navigator.clipboard
+        .writeText(textToCopy)
+        .then(() =>
+        {
+          alert('Text copied to clipboard!');
+        })
+        .catch((err) =>
+        {
+          console.error('Failed to copy text: ', err);
+        });
+    }
+  </script>
+</body>
+
+</html>
