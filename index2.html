@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Company Info</title>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-white shadow border-b">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-4">
+        <img src="./icons/logo.png" alt="Company logo" class="h-10 w-10">
+        <h1 class="text-lg font-medium">Company logo</h1>
+      </div>
+      <img src="./icons/download.jpeg" alt="User Avatar" class="h-10 w-10 rounded-full">
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white">
+    <div class="container mx-auto px-6 py-6">
+      <div class="flex items-center space-x-2">
+        <!-- Breadcrumb navigation -->
+        <h1 class="mb-4 text-3xl font-semibold">My Companies</h1>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Centered Div -->
+  <div class="flex items-center justify-center min-h-screen bg-white">
+    <div class="bg-white p-6 rounded-lg text-center w-full" style="max-width: 30rem;">
+      <div class="mb-4">
+        <button class="bg-white text-black border border-white pt-2 px-4 font-medium">
+          <i class="material-icons">add_circle_outline</i>
+        </button>
+      </div>
+      <h2 class="mb-4 text-2xl font-semibold">Create a new company to get started</h2>
+      <p class="mb-4 text-lg text-gray-600">You don't have any company yet. Create a new company to get started</p>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-purple-500">Create New</button>
+    </div>
+  </div>
+</body>
+
+</html>
